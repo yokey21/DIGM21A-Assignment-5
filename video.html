@@ -9,7 +9,26 @@
 </head>
 
 <body>
-    <p><a href="index.html">HOME</a></p>
+    <div style="border: 2px solid blueviolet">
+        <h1>Street Fighter goes to... Hawaii!? </h1>
+        <p>Check out this video where Guile's theme is played on the ukulele. If you prefer not to watch the video, then
+            you
+            can just listen to it too! </p>
+        <video poster="assets/images/guileThumbnail.jpg" width="400" height="320" preload controls loop>
+            <source src="assets/guileThemeUkulele.mp4" />
+        </video>
+    </div>
+
+    <div style="border: 2px solid yellow">
+        <p>Here is the same track but as audio only!</p>
+        <audio controls autoplay>
+            <source src="assets/guileTheme.mp3" />
+            <p>This browser does not support our audio
+                format.</p>
+        </audio>
+    </div>
+
+    <p>Well that's enough music for now. Let's go back to the <a href="index.html">Home Page!</a></p>
 </body>
 
 </html>
