@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hi, Welcome to WVC</h1>
-    <p>Login first to get the best use out of this site:</p>
+    <div style="border:2px solid purple">
+        <h1>Hi, Welcome to WVC</h1>
+        <p>Login first to get the best use out of this site:</p>
 
-    <form action="http://www.example.com/login.php">
-        <p>Username:
-            <input type = "text" name="username" size="15"
-            maxlength="30" placeholder="Enter Username" required="required">
-        </p>
-        <p>Password:
-            <input type="password" name="password" size="15"
-            maxlength="30" placeholder="Enter Password" required="required"/>
-        </p>
-        <button>Submit</button>
-    </form><br>
+        <form action="http://www.example.com/login.php">
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="30" placeholder="Enter Username"
+                    required="required">
+            </p>
+            <p>Password:
+                <input type="password" name="password" size="15" maxlength="30" placeholder="Enter Password"
+                    required="required" />
+            </p>
+            <button>Submit</button>
+        </form><br>
+    </div>
+    <p>After you've logged in, <a href="video.html">CLICK HERE</a> to watch a video or listen to some music! </p>
 
-    <img src="images/college.jpg" height="600" width="450">
+    <img src="assets/images/college.jpg" height="600" width="450" style="border:2px solid orange">
 
-    <h2>About the school</h2>
-    <p>We are the best at what we do! From the arts to the sciences, we've got you covered. Here you will find all the information you need:</p>
-    <ul>
-        <li>Course list</li>
-        <li>How to sign up for classes</li>
-        <li>Resource centers</li>
-        <li>Faculty list</li>
-        <li>Campus map</li>
-    </ul>
+    <div style="border: 2px solid green;">
+        <h2>About the school</h2>
+        <p>We are the best at what we do! From the arts to the sciences, we've got you covered. Here you will find all
+            the information you need:</p>
+        <ul>
+            <li>Course list</li>
+            <li>How to sign up for classes</li>
+            <li>Resource centers</li>
+            <li>Faculty list</li>
+            <li>Campus map</li>
+        </ul>
+    </div>
 
-    <p>Still need more information? No worries! Feel free to use our search bar below! </p>
-    
-    <form action="http://www.example.org/search.php">
-        <p>Search:</p>
-        <input type="search" name="search"
-        placeholder="Enter keyword" />
-        <button>Search</button>
-        
-    </form>
+    <iframe width="450" height="350" src="http://maps.google.co.uk/maps?q=moma+new+york
+        &amp;output=embed">
+    </iframe>
 
-    <h3>Join our Mailing list!</h3>
-    <p>If you join our mailing list, you will get exclusive information regarding upcoming events, assignments, and well... more events! Be the first to be “in the know”.  We promise not to spam you. <i>Really.</i></p>
-    <form action="http://www.example.org/subscribe.php">
-        <p>Please enter your email address:</p>
-        <input type="email" name="email" />
-        <button>Submit</button>
-    </form>
+    <div style="border: 2px solid pink">
+        <p>Still need more information? No worries! Feel free to use our search bar below! </p>
 
-    <h3>What kind of music applications do you like using while studying or on the go?  </h3>
-    <form action="http://www.example.com/profile.php">
-        <p>You can choose more than one music streaming application:</p>
-        <input type="checkbox" name="service"
-        value="itunes" checked="checked" /> iTunes
-        <input type="checkbox" name="service"
-        value="lastfm" /> Last.fm
-        <input type="checkbox" name="service"
-        value="spotify" /> Spotify
-    </form>
+        <form action="http://www.example.org/search.php">
+            <p>Search:</p>
+            <input type="search" name="search" placeholder="Enter keyword" />
+            <button>Search</button>
 
-    <form action="http://www.example.com/profile.php">
-        <p>Favorite style of music? </p>
-        <input type="radio" name="genre" value="rock"
-        checked="checked" /> Rock
-        <input type="radio" name="genre" value="pop" />
-        Pop
-        <input type="radio" name="genre" value="jazz" />
-        Jazz
         </form>
+    </div>
+    <div style="border:2px solid red">
+        <h3>Join our Mailing list!</h3>
+        <p>If you join our mailing list, you will get exclusive information regarding upcoming events, assignments, and
+            well... more events! Be the first to be “in the know”. We promise not to spam you. <i>Really.</i></p>
+        <form action="http://www.example.org/subscribe.php">
+            <p>Please enter your email address:</p>
+            <input type="email" name="email" />
+            <button>Submit</button>
+        </form>
+    </div>
 
-    <h3>Are you a MacOS, Windows, or Linux user? </h3>
-    <form action="http://www.example.com/profile.php">
-        <p>As you browse the internet, which kind of computer OS are you using? </p>
-        <select name="devices">
-        <option value="Windows">Windows</option>
-        <option value="MacOS">MacOS</option>
-        <option value="Linux">Linux</option>
-        </select>
-    </form>
+    <div style="border:2px solid blue">
+        <h3>What kind of music applications do you like using while studying or on the go? </h3>
+        <form action="http://www.example.com/profile.php">
+            <p>You can choose more than one music streaming application:</p>
+            <input type="checkbox" name="service" value="itunes" checked="checked" /> iTunes
+            <input type="checkbox" name="service" value="lastfm" /> Last.fm
+            <input type="checkbox" name="service" value="spotify" /> Spotify
+        </form>
+    </div>
 
-    <h3>Add an image for your profile! </h3>
-    <img src="images/student.jpg" height="600" width="600">
-    <form action="http://www.example.com/upload.php"
-        method="post">
-        <p>Upload your song in MP3 format:</p>
-        <input type="file" name="user-song" /><br />
-        <input type="submit" value="Upload" />
-    </form>
+    <div style="border:2px solid black">
+        <form action="http://www.example.com/profile.php">
+            <p>Favorite style of music? </p>
+            <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+            <input type="radio" name="genre" value="pop" />
+            Pop
+            <input type="radio" name="genre" value="jazz" />
+            Jazz
+        </form>
+    </div>
+
+    <div style="border:2px solid orange">
+        <h3>Are you a MacOS, Windows, or Linux user? </h3>
+        <form action="http://www.example.com/profile.php">
+            <p>As you browse the internet, which kind of computer OS are you using? </p>
+            <select name="devices">
+                <option value="Windows">Windows</option>
+                <option value="MacOS">MacOS</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </form>
+    </div>
+
+    <div style="border:2px solid purple">
+        <h3>Add an image for your profile! </h3>
+        <img src="assets/images/student.jpg" height="600" width="600">
+        <form action="http://www.example.com/upload.php" method="post">
+            <p>Upload your song in MP3 format:</p>
+            <input type="file" name="user-song" /><br />
+            <input type="submit" value="Upload" />
+        </form>
+    </div>
 
     <h3>Contact?</h3>
     <fieldset>
         <legend><b>Please use the form below</b> </legend>
         <label>First Name:<br />
-        <input type="text" name="first" /></label><br />
+            <input type="text" name="first" /></label><br />
         <label>Last Name:<br />
-        <input type="text" name="last" /></label><br />
+            <input type="text" name="last" /></label><br />
         <label>Email:<br />
-        <input type="text" name="email" /></label>
+            <input type="text" name="email" /></label>
     </fieldset>
 
+
     <h3>Set a date when you can visit the campus! </h3>
-    <form action="http://www.example.com/bookings/"
-        method="post">
+    <form action="http://www.example.com/bookings/" method="post">
         <label for="username">Departure date:</label>
         <input type="date" name="depart" />
         <input type="submit" value="Submit" />
     </form>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
 </html>
